@@ -1,0 +1,30 @@
+//class mahasiswa
+package praktikum2;
+
+public class Mahasiswa {
+  public int nip;
+  public String nama;
+
+  public Mahasiswa(int i,String n){
+      nip=i;
+      nama=n;
+  }
+  public int getNRP(){
+      return nip;
+  }
+  public String getNama(){
+      return nama;
+  }
+}
+
+//class coba (untuk output)
+package praktikum2;
+
+public class coba {
+  public static void main(String[] args){
+    Mahasiswa mhs=new Mahasiswa(7201,"budi martati");
+    System.out.println("NRP : "+mhs.getNRP());
+    System.out.println("Nama : "+mhs.getNama());
+  }
+
+}
