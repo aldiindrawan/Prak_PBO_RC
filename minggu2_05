@@ -1,0 +1,30 @@
+package praktikum2;
+
+public class Lingkaran {
+    public double jari;
+    
+    public void isiJari(double jari){
+        this.jari=jari;
+    }
+    public double getLuas(){
+        return 3.14*jari*jari;
+    }
+    public double getKeliling(){
+        return 2*3.14*jari;
+    }
+    public void getHasil(){
+        System.out.println("jadi luasnya "+getLuas()+" sedangkan kelilingnya "+getKeliling());
+    }
+}
+
+
+package praktikum2;
+
+public class Testlingkaran {
+    public static void main(String[] args){
+        Lingkaran l=new Lingkaran();
+        l.isiJari(10.0);
+        l.getHasil();
+    }
+    
+}
